@@ -1,0 +1,10 @@
+
+.gradient{
+    background-image: url('../img/bg-pattern.png'), 
+    linear-gradient(90deg, rgb(214, 20, 33) 0%, rgb(122, 43, 161) 100%);  
+}
+
+.stop {
+    background-image: url('../img/bg-cta.jpg'); 
+         
+}

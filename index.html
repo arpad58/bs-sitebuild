@@ -13,34 +13,37 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>Sitebuilding</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-        <span>Start Bootstrap</span>
+        <div class="col-12 col-lg-4 offset-lg-2 px-lg-5">
+            <span class="small">Start Bootstrap</span>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">Menü</span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainMenu">
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#mainMenu"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon float-left">Menü</span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse float-right" id="mainMenu">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">DOWNLOAD</a>
+                    <a class="nav-link small" href="#dow">DOWNLOAD</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FEATURES</a>
+                    <a class="nav-link small" href="#fea">FEATURES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link small" href="#con">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <header class="py-5 bg-light">
+    <header class="py-5 gradient bg-linear-gradient">
         <div class="container">
             <div class="row justify-content-md-center">
 
@@ -49,11 +52,11 @@
                         <p class="h3">
                             New Age is an app landing page that will help you beautifully showcase your new
                             mobile app, or anything else!
-
                         </p>
                     </section>
                     <footer>
-                        <a href="#" class="btn btn-outline-dark">START NOW FOR FREE!</a>
+                        <a href="#" class="btn btn-outline-dark badge-pill">START NOW FOR FREE!</a>
+
                     </footer>
                 </div>
 
@@ -66,7 +69,7 @@
     </header>
 
     <main>
-        <section class="py-5 bg-warning text-dark">
+        <section class="py-5 bg-warning text-dark" id="dow">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-5">
@@ -89,7 +92,7 @@
             </div>
         </section>
 
-        <section class="py-5 bg-success text-dark">
+        <section class="py-5 text-dark" id="fea">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-6">
@@ -105,22 +108,56 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-3"><img class=" w-100" src="img/phone.png" alt=""></div>
+
                     <div class="col-lg-6">
+
                         <div class="row ">
-                            <div class="col-lg-6">Device Mockups</div>
-                            <div class="col-lg-6">Flexible Use</div>
+                            <div class="col-lg-6 card border-light mb-3 p-3 text-center">
+                                <div class="card-header">&#128241;</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Device Mockups</h5>
+                                    <p class="card-text">Ready to use HTML/CSS device mockups, no Photoshop required!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 card border-light mb-3 p-3 text-center">
+                                <div class="card-header">&#128241;</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Flexible Use</h5>
+                                    <p class="card-text">Put an image, video, animation, or anything else in the screen!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="row ">
-                            <div class="col-lg-6">Free to Use</div>
-                            <div class="col-lg-6">Open Source</div>
+                            <div class="col-lg-6 card border-light mb-3 p-3 text-center">
+                                <div class="card-header">&#128241;</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Free to Use</h5>
+                                    <p class="card-text">As always, this theme is free to download and use for any
+                                        purpose!</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 card border-light mb-3 p-3 text-center">
+                                <div class="card-header">&#128241;</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Open Source</h5>
+                                    <p class="card-text">Since this theme is MIT licensed, you can use it commercially!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-5 bg-primary">
-            <div class="container stop">
+        <section class="py-5 stop">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <section>
@@ -128,19 +165,19 @@
                             <p class="h1">Start building.</p>
                         </section>
                         <footer>
-                            <a href="#" class="btn btn-outline-dark">LET'S GET STARTED !</a>
+                            <a href="#" class="btn btn-outline-dark badge-pill">LET'S GET STARTED !</a>
                         </footer>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-4 text-center text-md-left bg-warning  mt-auto">
+        <section class="py-4 text-center text-md-left bg-warning  mt-auto" id="con">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-4">
                         <h5 class="text-center">
-                            We ♡ new &#9825; friends!
+                            We <i class="fa fa-heart text-danger"></i> friends!
                         </h5>
                         <nav class="nav justify-content-center">
                             <a href="#" class="text-white mr-2" data-toggle="tooltip" data-placement="top"
